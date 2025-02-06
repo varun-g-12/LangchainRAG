@@ -3,13 +3,16 @@ name = "langchain-rag"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Varun G",email = "varungangu1@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
 dependencies = [
-    "docling (>=2.18.0,<3.0.0)",
-    "markdownify (>=0.14.1,<0.15.0)"
+    "markdownify (>=0.14.1,<0.15.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "langchain (>=0.3.17,<0.4.0)",
+    "langchain-openai (>=0.3.3,<0.4.0)",
+    "langgraph (>=0.2.69,<0.3.0)"
 ]
 
 
