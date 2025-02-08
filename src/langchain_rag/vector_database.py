@@ -39,6 +39,11 @@ def get_doc(url: str, session: requests.Session) -> Document | None:
     if not article_tag:
         print(f"Unable to find article tag: {url}")
         return None
+
+    # Remove all image tags from the article_tag
+    for img in article_tag.find_all("img"):  # type: ignore
+        img.decompose()
+
     page_content = md(str(article_tag))
     doc = Document(page_content=page_content, metadata={"url": url})
     return doc
