@@ -6,7 +6,7 @@ from langchain_rag.main import agent
 st.set_page_config(
     page_title="LangchainRAG Chat",
     page_icon="🤖",
-    layout="wide",  # Options: 'centered' or 'wide'
+    layout="centered",  # Options: 'centered' or 'wide'
     initial_sidebar_state="auto",
 )
 

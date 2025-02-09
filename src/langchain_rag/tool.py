@@ -10,7 +10,7 @@ from retrying import retry
 from tqdm import tqdm
 
 
-@retry
+@retry(wait_fixed=5000)
 def ddgs_urls(query: str, max_results: int = 10) -> list[str]:
     """
     Retrieve a list of URLs from DuckDuckGo search results for a given query,
