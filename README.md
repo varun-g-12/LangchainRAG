@@ -51,6 +51,3 @@ To run the application as a web interface using Streamlit:
 poetry run streamlit run src/langchain_rag/app.py
 ```
 Open your web browser and navigate to the URL provided by Streamlit to interact with the application.
-
-## License
-This project is licensed under the MIT License.
